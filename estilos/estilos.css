@@ -1,0 +1,80 @@
+/* configuracoes gerais */
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EEF9BF;
+}
+
+/* titulo do jogo */
+header {
+    color: #75B79E;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* cartas do jogo */
+.cartas {
+    margin-top: 50px;
+    /* background-color: darksalmon; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 73px;
+    margin-right: 122px;
+    margin-top: 47px;
+}
+
+.carta {
+    width: 117px;
+    height: 146px;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+    background-color:  #A7E9AF;
+    margin-left: 35px;
+    margin-top: 35px;
+    position: relative;
+}
+
+.carta img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 24px;
+    left: 10px;
+    bottom: 22px;
+    right: 7px;
+    
+}
+
+/* configugracoes para mobile */
+@media (max-width: 614px) {
+    header {
+        font-size: 36px;
+        /* background-color: darksalmon; */
+        margin-left: 50px;
+        margin-right: 50px;
+        /* display: flex;
+        flex-wrap: wrap; */
+
+        
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: -0.004em;
+    }
+
+    .cartas {
+        margin-bottom: 40px;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+}
