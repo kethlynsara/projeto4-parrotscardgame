@@ -35,15 +35,36 @@ header {
 .carta {
     width: 117px;
     height: 146px;
-    border: 1px solid #99CEA8;
-    border-radius: 5px;
-    background-color:  #A7E9AF;
     margin-left: 35px;
-    margin-top: 35px;
+    margin-top: 35px; 
     position: relative;
+    transform-style: preserve-3d;    
+    transition: all .5s;
 }
 
-.carta img {
+.face {
+    width: 100%;
+    height: 100%;
+    background-color: #A7E9AF;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    
+    
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+.front-face img {
     width: 100px;
     height: 100px;
     position: relative;
@@ -52,6 +73,10 @@ header {
     bottom: 22px;
     right: 7px;
     
+} 
+img {
+    width: 80px;
+    height: 80px;
 }
 
 /* configugracoes para mobile */
